@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #one{
+            /*animation-name: myanimation;*/
+            /*animation-duration: 3s;*/
+            /*animation-iteration-count: 4;*/
+            animation:myanimation 3s infinite;
+            }
+        #two{
+            animation:slidein 5s infinite ;
+        }
+        @keyframes slidein {
+            0%{transform:translateX(0);}
+            100%{transform:translate(700px);}
+        }
+         #three{
+             background-color: darkgrey;
+             width: 200px;
+             height: 200px;
+             animation-name: spin;
+             animation-duration: 2s;
+             animation-iteration-count: 5;
+         }
+         #btn{
+             background-color: darkgrey;
+             padding: 10px 20px;
+             color: white;
+             transition: background-color 0.4s ease ;
+         }
+         #btn:hover{
+             background-color: yellow;
+             transform:scale(1.1) ;
+         }
+         @keyframes spin {
+             0%{transform:rotate(0deg);
+             background-color:green;}
+        100%{transform:rotate(360deg);
+        background-color: yellow;}
+         }
+
+            @keyframes myanimation {
+    0%{color: red;}
+    50%{color: green;}
+    100%{color: blue;}
+        }
+
+    </style>
+</head>
+<body>
+<h1 id="two">Scholarships Available</h1>
+<p id="one">Full‑tuition scholarships covering web, Python, Android, and website development. Benefits
+    include data stipends and hands‑on learning via live virtual classes extending over
+    several months .</p>
+<div id="three">
+<p>Kimmy Loans</p>
+</div>
+<button id="btn">click me</button>
+</body>
+</html>

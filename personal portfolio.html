@@ -11,18 +11,29 @@
             background-color: gray;
             font-family: cursive;
             margin: 0;
+            padding: 0;
         }
         h3{
             color: darkgreen;
         }
+        label{
+            display: block;
+            font-weight: bold;
+        }
+        input[ type=text] , input[type=email] ,textarea{
+            width: 100%;
+            border: 1px solid lightpink;
+            border-radius: 5px;
+         }
         header{
             background-color: burlywood;
-            text-align: unset;
+            text-align: center;
             color: purple;
+            padding: 10px;
         }
         main{
             max-width: 900px;
-            margin: 50px;
+            margin: 20px auto;
         }
         footer{
             background-color: burlywood;
@@ -32,6 +43,7 @@
             list-style-type:none;
             display: inline;
             font-weight: bold;
+            margin-right: 15px;
         }
         #aboutme{
             background-color: darkgreen;
@@ -48,8 +60,8 @@
             border-radius: 5px;
         }
         #contacts{
-
-            border-left: 6px solid midnightblue;
+            background-color: indigo;
+            border: 6px solid midnightblue;
         }
         article{
 background-color: lightcyan;
@@ -69,6 +81,11 @@ background-color: lightcyan;
             background-color: beige;
             border: none;
             border-radius: 5px;
+        }
+        section{
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
         }
     </style>
 </head>
